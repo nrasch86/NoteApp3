@@ -7,13 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const clearButton = document.querySelector('.clear-btn');
 }
   
-    // Load existing notes
-    const loadNotes = async () => {
-      try {
-        const response = await fetch('/api/notes');
-        const notes = await response.json();
-      }
-  
+
     // Event Listeners
     saveNoteButton.addEventListener('click', saveNote);
     newNoteButton.addEventListener('click', () => {
